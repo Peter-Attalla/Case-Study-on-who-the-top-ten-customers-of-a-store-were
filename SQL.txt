@@ -1,3 +1,5 @@
+Query 1
+
 SELECT c.CustomerId, c.FirstName,c.LastName,SUM(I.total) Purchases
 FROM Customer c
 JOIN Invoice I
@@ -5,3 +7,6 @@ ON C.CustomerId=I.CustomerId
 GROUP BY 1,2,3
 ORDER BY 4 DESC
 LIMIT 10;
+
+
+Thank you
